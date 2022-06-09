@@ -19,7 +19,7 @@ function createData(packageNo: string, insuranceName: string, description: strin
 const rows = [
   createData('Package#1', "Proteco Insurance", "Our most affordable package. Your personal belongings will be covered up to 15k$. This is perfect if you own a few belongings.", 12.50),
   createData('Package#2', "Umbrella Insurance", "Our most popular package. Your personal belongings will be covered up to 30k$. This package also includes a free water sensor to detect a water leak in your home.", 35.73),
-  createData('Package#3', "Thor Insurance", "Nothing but the best. Your personal belongings will be covered up to 100k$. It evenincludes a protection against an alien invasion.", 79.30),
+  createData('Package#3', "Thor Insurance", "Nothing but the best. Your personal belongings will be covered up to 100k$. It even includes a protection against an alien invasion.", 79.30),
 ];
 // For Packeg Table END
 
@@ -125,7 +125,7 @@ export const App: React.FunctionComponent = () => {
   };
 
   const validateAge = (age: number) => {
-    return age && age >= 21;
+    return age && age >= 21 && age <100;
   };
 
   return (
